@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            background-color: rgb(35, 36, 91);
+            color: white;
+            text-align: center;
+            padding: 0.5em;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            flex: 1;
+            padding: 1em;
+        }
+        aside {
+            background-color: #7a98e3;
+            padding: 1em;
+            margin: 1em 0;
+        }
+        section {
+            margin: 1em 0;
+        }
+        .sidebar {
+            width: 25%;
+            float: right;
+        }
+        .content {
+            width: 70%;
+            float: left;
+        }
+        img {
+            max-width: 100%;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Saya</h1>
+    </header>
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Tentang</a>
+        <a href="#">Kontak</a>
+    </nav>
+    <div class="content">
+        <main>
+            <article>
+                <h2>Artikel Pertama</h2>
+                <p>Ini adalah paragraf dari artikel pertama.</p>
+            </article>
+            <article>
+                <h2>Artikel Kedua</h2>
+                <p>Ini adalah paragraf dari artikel kedua.</p>
+            </article>
+            <section>
+                <img src="https://via.placeholder.com/600x400" alt="Foto Pertama">
+                <p>Keterangan singkat foto pertama.</p>
+            </section>
+            <section>
+                <img src="https://via.placeholder.com/600x400" alt="Foto Kedua">
+                <p>Keterangan singkat foto kedua.</p>
+            </section>
+            <section>
+                <img src="https://via.placeholder.com/600x400" alt="Foto Ketiga">
+                <p>Keterangan singkat foto ketiga.</p>
+            </section>
+        </main>
+    </div>
+    <aside class="sidebar">
+        <h3>Tentang Penulis</h3>
+        <p>Informasi tentang penulis blog ini.</p>
+    </aside>
+    <div class="clear"></div>
+    <footer>
+        <p>Hak Cipta 2024</p>
+    </footer>
+</body>
+</html>
